@@ -1,10 +1,3 @@
-Parfait 👍 Tu veux donc une **documentation claire et complète** que tu puisses donner à tes élèves pour qu’ils puissent installer et utiliser ton *WAMP Docker* sans aide.
-
-Voici une version prête à copier-coller (ou à mettre en PDF/Markdown).
-
----
-
-````{"variant":"standard","title":"Documentation – WAMP Docker pour les élèves","id":"50231"}
 # Documentation – WAMP Docker pour les élèves
 
 ## 🎯 Objectif
@@ -196,11 +189,3 @@ Les élèves peuvent simplement **double-cliquer sur `start.bat`** pour tout lan
 | `src/` | Dossier contenant le code du projet |
 | `8081` | Port pour accéder au site |
 | `8080` | Port pour phpMyAdmin |
-
----
-
-**Félicitations 🎉**  
-Votre environnement WAMP Docker est prêt à être utilisé !
-````
-
-Souhaites-tu que je te le reformate directement en **Markdown prêt pour export PDF** (avec un sommaire, titres cliquables et encadrés) ?
