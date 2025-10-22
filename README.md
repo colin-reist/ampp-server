@@ -141,7 +141,7 @@ docker ps
 
 | Service       | URL                          | Identifiants par défaut         |
 |----------------|------------------------------|---------------------------------|
-| Site Web (PHP) | [http://localhost:8081](http://localhost:8081) | — |
+| Site Web (PHP) | [http://localhost:8081](http://localhost:80) | — |
 | phpMyAdmin     | [http://localhost:8080](http://localhost:8080) | utilisateur : `root` / mot de passe : `root` |
 
 ---
