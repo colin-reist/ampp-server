@@ -150,7 +150,7 @@ docker ps
 
 | Problème | Solution |
 |-----------|-----------|
-| Page charge à l’infini | Vérifier que le port `8081` n’est pas déjà utilisé, ou changer `8081:80` dans le fichier `docker-compose.yml`. |
+| Page charge à l’infini | Vérifier que le port `80` n’est pas déjà utilisé, ou changer `80:80` dans le fichier `docker-compose.yml`. |
 | Le conteneur web ne démarre pas | Exécuter `docker logs wamp_web` pour voir les erreurs. |
 | phpMyAdmin ne se connecte pas | Vérifier que le conteneur `wamp_db` est bien lancé (`docker ps`). |
 | Modifier le mot de passe root | Modifier la variable `MYSQL_ROOT_PASSWORD` dans `docker-compose.yml`, puis exécuter `docker compose down -v && docker compose up -d`. |
@@ -187,5 +187,5 @@ Les élèves peuvent simplement **double-cliquer sur `start.bat`** pour tout lan
 | MariaDB | Base de données MySQL |
 | phpMyAdmin | Interface graphique pour gérer les bases |
 | `src/` | Dossier contenant le code du projet |
-| `8081` | Port pour accéder au site |
+| `80` | Port pour accéder au site |
 | `8080` | Port pour phpMyAdmin |
