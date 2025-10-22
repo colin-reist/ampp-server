@@ -67,7 +67,7 @@ services:
     build: ./apache-php
     container_name: wamp_web
     ports:
-      - "8081:80"   # Accès au site sur http://localhost:8081
+      - "80:80"
     volumes:
       - ./src:/var/www/html
     depends_on:
