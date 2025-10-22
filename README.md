@@ -74,7 +74,7 @@ services:
       - db
 
   db:
-    image: mariadb:11
+    image: mysql:8.1
     container_name: wamp_db
     restart: always
     environment:
@@ -82,6 +82,7 @@ services:
       MYSQL_DATABASE: testdb
       MYSQL_USER: user
       MYSQL_PASSWORD: userpass
+    command: --default-storage-engine=INNODB --innodb-file-per-table=1
     volumes:
       - db_data:/var/lib/mysql
 
@@ -94,7 +95,7 @@ services:
       PMA_USER: root
       PMA_PASSWORD: root
     ports:
-      - "8080:80"  # Accès à phpMyAdmin sur http://localhost:8080
+      - "8080:80"
     depends_on:
       - db
 
