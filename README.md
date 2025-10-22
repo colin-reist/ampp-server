@@ -67,11 +67,12 @@ services:
     build: ./apache-php
     container_name: wamp_web
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - ./src:/var/www/html
     depends_on:
       - db
+
 
   db:
     image: mysql:8.1
@@ -142,7 +143,7 @@ docker ps
 
 | Service       | URL                          | Identifiants par défaut         |
 |----------------|------------------------------|---------------------------------|
-| Site Web (PHP) | [http://localhost:8081](http://localhost:80) | — |
+| Site Web (PHP) | [http://localhost:8081](http://localhost:8081) | — |
 | phpMyAdmin     | [http://localhost:8080](http://localhost:8080) | utilisateur : `root` / mot de passe : `root` |
 
 ---
@@ -188,5 +189,5 @@ Les élèves peuvent simplement **double-cliquer sur `start.bat`** pour tout lan
 | MariaDB | Base de données MySQL |
 | phpMyAdmin | Interface graphique pour gérer les bases |
 | `src/` | Dossier contenant le code du projet |
-| `80` | Port pour accéder au site |
+| `8081` | Port pour accéder au site |
 | `8080` | Port pour phpMyAdmin |
