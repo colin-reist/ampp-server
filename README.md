@@ -152,7 +152,7 @@ docker ps
 
 | Problème | Solution |
 |-----------|-----------|
-| Page charge à l’infini | Vérifier que le port `80` n’est pas déjà utilisé, ou changer `80:80` dans le fichier `docker-compose.yml`. |
+| Page charge à l’infini | Vérifier que le port `8080` n’est pas déjà utilisé, ou changer `8080:80` dans le fichier `docker-compose.yml`. |
 | Le conteneur web ne démarre pas | Exécuter `docker logs wamp_web` pour voir les erreurs. |
 | phpMyAdmin ne se connecte pas | Vérifier que le conteneur `wamp_db` est bien lancé (`docker ps`). |
 | Modifier le mot de passe root | Modifier la variable `MYSQL_ROOT_PASSWORD` dans `docker-compose.yml`, puis exécuter `docker compose down -v && docker compose up -d`. |
