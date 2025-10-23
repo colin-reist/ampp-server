@@ -29,6 +29,8 @@ docker compose version
 
 ## 📁 2. Structure du projet
 
+> ### ❗Si vous téléchargez le dossier disponible dans ce github vous pouvez ignorer les chapitres 2 et 3
+
 Créez un dossier nommé `wampserver-docker` contenant les éléments suivants :
 
 ```
