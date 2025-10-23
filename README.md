@@ -1,10 +1,10 @@
-# Documentation – WAMP Docker pour les élèves
+# Documentation – WAMP Docker
 
 ## 🎯 Objectif
 Ce guide permet d’installer un environnement équivalent à **WampServer** à l’aide de **Docker**.  
 Vous obtiendrez :
 - un serveur **Apache + PHP**,
-- une base de données **MariaDB**,
+- une base de données **MySQL**,
 - une interface de gestion **phpMyAdmin**.
 
 ---
