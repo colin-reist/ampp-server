@@ -3,7 +3,7 @@ services:
     build: ./apache-php
     container_name: wamp_web
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - ./src:/var/www/html
     depends_on:
@@ -11,7 +11,7 @@ services:
 
 
   db:
-    image: mariadb:11
+    image: mysql:8.1
     container_name: wamp_db
     restart: always
     environment:
@@ -19,6 +19,7 @@ services:
       MYSQL_DATABASE: testdb
       MYSQL_USER: user
       MYSQL_PASSWORD: userpass
+    command: --default-storage-engine=INNODB --innodb-file-per-table=1
     volumes:
       - db_data:/var/lib/mysql
 
