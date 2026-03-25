@@ -20,6 +20,8 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: userpass
     command: --default-storage-engine=INNODB --innodb-file-per-table=1
+    ports:
+      - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
 
